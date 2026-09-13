@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Tarun Ganesh</title>
+<meta name="description" content="A showcase of Tarun Ganesh's projects across data engineering, AI/ML, web development and Java.">
+<meta name="theme-color" content="#0a0912">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div id="preloader"><div id="preloaderLottie" class="preloader-lottie"></div></div>
+  <div class="bg-glow" id="bgGlow" aria-hidden="true"></div>
+  <div id="particles-js" class="particles-layer" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Collapse sidebar"><i class="fa-solid fa-chevron-left"></i></button>
+    <a href="index.html" class="brand">Tarun <span>Ganesh</span></a>
+    <nav class="sidebar-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" data-page="index.html"><i class="fa-solid fa-house"></i><span class="label">Home</span></a></li>
+        <li><a href="about.html" class="nav-link" data-page="about.html"><i class="fa-solid fa-user"></i><span class="label">About</span></a></li>
+        <li><a href="experience.html" class="nav-link" data-page="experience.html"><i class="fa-solid fa-briefcase"></i><span class="label">Experience</span></a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills.html"><i class="fa-solid fa-layer-group"></i><span class="label">Skills</span></a></li>
+        <li><a href="services.html" class="nav-link" data-page="services.html"><i class="fa-solid fa-diagram-project"></i><span class="label">Services</span></a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects.html"><i class="fa-solid fa-code-branch"></i><span class="label">Projects</span></a></li>
+        <li><a href="certifications.html" class="nav-link" data-page="certifications.html"><i class="fa-solid fa-certificate"></i><span class="label">Certifications</span></a></li>
+        <li><a href="resume.html" class="nav-link" data-page="resume.html"><i class="fa-solid fa-file-lines"></i><span class="label">Resume</span></a></li>
+        <li><a href="https://leetcode.com/u/enstg123/" class="nav-link" target="_blank" rel="noopener">
+          <i class="fa-solid fa-code"></i><span class="label">LeetCode</span><span class="ext"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link nav-cta" data-page="contact.html"><i class="fa-solid fa-star"></i><span class="label">Contact Me</span></a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-socials">
+        <a href="https://github.com/tarunganesh2004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/tarunganesh2004" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/u/enstg123/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+      </div>
+      <p class="credit">Developed by Tarun Ganesh</p>
+      <p class="copyright">© <span class="js-year">2026</span> TG</p>
+    </div>
+  </aside>
+
+  <main class="content" id="main">
+    <div class="section-inner">
+      <div class="page-head">
+        <span class="eyebrow">Projects</span>
+        <h1 class="glitch" data-text="My recent works">My recent <span class="accent">works</span></h1>
+        <p>A mix of data engineering pipelines, machine learning systems, web apps and Java projects I've built.</p>
+      </div>
+
+      <div class="filter-bar" id="projectFilters">
+        <button data-filter="all" class="is-active">All Projects</button>
+        <button data-filter="data-engineering">Data Engineering</button>
+        <button data-filter="ai-ml">AI / ML</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="java">Java</button>
+      </div>
+
+      <div class="deepdive-list">
+
+        <article class="deepdive-card project-card reveal" data-category="data-engineering">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">Data Engineering</span>
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80" alt="Code streaming across a monitor, representing a real-time log analytics pipeline" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Real-Time Log Analytics Pipeline</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/realtime-log-analytics-pipeline" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/realtime-log-analytics-pipeline" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">Server logs needed sub-second visibility into errors and user activity at scale. We built a streaming pipeline with Kafka and PySpark Streaming to ingest, transform and aggregate log events in real time, storing results in MongoDB for fast querying and Matplotlib-driven reporting.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>10k+</b><span>Events / min</span></div>
+              <div class="deepdive-metric"><b>&lt;2s</b><span>Processing Lag</span></div>
+              <div class="deepdive-metric"><b>99.5%</b><span>Pipeline Uptime</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>Kafka</span><span>PySpark</span><span>MongoDB</span><span>Python</span><span>Pandas</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="data-engineering">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">Data Engineering</span>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Retail sales analytics dashboard on a laptop screen" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Azure ETL Pipeline for Retail Sales Analytics</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/azure-retail-etl-pipeline" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/azure-retail-etl-pipeline" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">Multi-source retail sales data needed one trustworthy home for reporting. We architected an ETL pipeline on Azure Data Factory and Databricks to ingest, clean and transform records with PySpark, loading curated tables into Synapse for BI and demand forecasting.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>5+</b><span>Source Systems</span></div>
+              <div class="deepdive-metric"><b>40%</b><span>Faster Reporting</span></div>
+              <div class="deepdive-metric"><b>1M+</b><span>Rows / Day</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>Azure Data Factory</span><span>Databricks</span><span>PySpark</span><span>Synapse</span><span>SQL</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="data-engineering">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">Data Engineering</span>
+            <img src="https://images.unsplash.com/photo-1758270705290-62b6294dd044?auto=format&fit=crop&w=1000&q=80" alt="Students collaborating around a laptop, representing a student analytics pipeline" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Student Analytics Pipeline</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/student-analytics-pipeline" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/student-analytics-pipeline" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">A university department needed a unified view of student performance scattered across attendance sheets, LMS exports and exam-result spreadsheets. We built an ETL pipeline with Python and PySpark to clean, join and load these sources into a warehouse, powering dashboards that flag at-risk students early.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>3</b><span>Data Sources Merged</span></div>
+              <div class="deepdive-metric"><b>5k+</b><span>Student Records</span></div>
+              <div class="deepdive-metric"><b>Early</b><span>At-Risk Flagging</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>Python</span><span>PySpark</span><span>SQL</span><span>Power BI</span><span>Pandas</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="ai-ml">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">AI / ML</span>
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=80" alt="Network switch with cables, representing IoT network traffic" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>IoT Network Traffic Detection</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/iot-network-traffic-detection" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/iot-network-traffic-detection" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">IoT networks are a growing attack surface with limited built-in defenses. We benchmarked TabNet, ResNet, Autoencoder and MLP on the ACI IoT 2023 dataset, using feature selection and standardization to flag malicious traffic in real time.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>98%</b><span>Accuracy (TabNet)</span></div>
+              <div class="deepdive-metric"><b>4</b><span>Models Benchmarked</span></div>
+              <div class="deepdive-metric"><b>0.97</b><span>Best ROC-AUC</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>TabNet</span><span>PyTorch</span><span>Scikit-learn</span><span>Pandas</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="ai-ml">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">AI / ML</span>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="Analytics charts on a laptop screen, representing epidemic case forecasting" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Predictive Modelling for Epidemic Outbreaks</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/epidemic-outbreak-prediction" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/epidemic-outbreak-prediction" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">Forecasting COVID-19 case counts required models that could handle noisy, non-stationary time series. We engineered Bidirectional LSTM, Transformer and GRU models on 184,000+ Kaggle records, using rolling averages and feature engineering to reduce noise.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>184k+</b><span>Training Records</span></div>
+              <div class="deepdive-metric"><b>BiLSTM</b><span>Best Model</span></div>
+              <div class="deepdive-metric"><b>Low</b><span>RMSE Error</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>TensorFlow</span><span>LSTM</span><span>Transformer</span><span>Pandas</span><span>Matplotlib</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="ai-ml">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">AI / ML</span>
+            <img src="https://images.unsplash.com/photo-1772115428479-9045bc0c2a3d?auto=format&fit=crop&w=1000&q=80" alt="Close-up of a hand interacting with a keyboard, representing gesture-based interaction" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Hand Gesture Recognition</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/hand-gesture-recognition" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/hand-gesture-recognition" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">Translating freehand sketches into recognized gestures called for a lightweight matching approach rather than a heavy trained model. A grid-based drawing interface captures a gesture and compares it against saved templates to predict the closest match.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>Grid</b><span>Based Input</span></div>
+              <div class="deepdive-metric"><b>Template</b><span>Matching Engine</span></div>
+              <div class="deepdive-metric"><b>Save/Load</b><span>Custom Gestures</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>Python</span><span>NumPy</span><span>Tkinter</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="java">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">Java</span>
+            <img src="https://images.unsplash.com/photo-1709880945165-d2208c6ad2ec?auto=format&fit=crop&w=1000&q=80" alt="Calculator on a desk representing a personal expense tracker" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Personal Expense Tracker</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/personal-expense-tracker" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/personal-expense-tracker" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">Tracking day-to-day spending against a monthly budget needed a simple, no-frills desktop tool. Built with Java Swing and core OOP principles, it lets users log expenses by category and instantly see budget-vs-actual breakdowns.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>Category</b><span>Based Tracking</span></div>
+              <div class="deepdive-metric"><b>Real-Time</b><span>Budget Reports</span></div>
+              <div class="deepdive-metric"><b>100%</b><span>Java Swing UI</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>Java</span><span>Swing</span><span>OOP</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="ai-ml">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">AI / ML</span>
+            <img src="https://images.unsplash.com/photo-1755960330836-e090c1ecce46?auto=format&fit=crop&w=1000&q=80" alt="Vintage camera representing computer-vision based image captioning" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Image Caption Generator</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/image-caption-generator" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/image-caption-generator" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">Generating natural-language descriptions of images required pairing strong visual features with sequential text generation. DenseNet201 handles feature extraction while an LSTM decoder writes the caption, served through a Flask app for upload and display.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>85%+</b><span>Caption Relevance</span></div>
+              <div class="deepdive-metric"><b>DenseNet201</b><span>Feature Extractor</span></div>
+              <div class="deepdive-metric"><b>LSTM</b><span>Caption Decoder</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>Keras</span><span>DenseNet201</span><span>LSTM</span><span>Flask</span><span>NumPy</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="web">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">Web</span>
+            <img src="https://images.unsplash.com/photo-1625232093255-89f3b0aa211b?auto=format&fit=crop&w=1000&q=80" alt="Orange and blue cloudy sky representing a weather forecasting website" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Weather Prediction Website</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/weather-app" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/weather-app" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">Users wanted fast, reliable weather lookups for any city without a cluttered UI. Built on the OpenWeatherMap API, the app fetches live temperature, humidity and wind data and gracefully handles invalid city names.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>Live</b><span>API Data</span></div>
+              <div class="deepdive-metric"><b>Global</b><span>City Coverage</span></div>
+              <div class="deepdive-metric"><b>Responsive</b><span>Mobile-First UI</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>JavaScript</span><span>OpenWeatherMap API</span><span>HTML</span><span>CSS</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="java">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">Java</span>
+            <img src="https://images.unsplash.com/photo-1757444838044-d9dcb1bb3017?auto=format&fit=crop&w=1000&q=80" alt="Vintage arcade machine glowing with neon lights" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Tic-Tac-Toe Game</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/tic-tac-toe-java" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/tic-tac-toe-java" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">A classic two-player game built to practice event-driven UI logic. Uses a 3x3 grid of Swing buttons with win-condition detection, highlighted winning combinations and a live turn indicator.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>3×3</b><span>Grid Logic</span></div>
+              <div class="deepdive-metric"><b>8</b><span>Win Conditions</span></div>
+              <div class="deepdive-metric"><b>2-Player</b><span>Local Multiplayer</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>Java</span><span>Swing</span></div>
+          </div>
+        </article>
+
+        <article class="deepdive-card project-card reveal" data-category="java">
+          <div class="deepdive-media">
+            <span class="deepdive-tag">Java</span>
+            <img src="https://images.unsplash.com/photo-1766995596065-590702fcce47?auto=format&fit=crop&w=1000&q=80" alt="Starry night sky, representing a Space Invaders style game" loading="lazy">
+          </div>
+          <div class="deepdive-body">
+            <div class="deepdive-head">
+              <h3>Space Invaders</h3>
+              <div class="deepdive-links">
+                <a href="https://github.com/tarunganesh2004/space-invaders-java" target="_blank" rel="noopener" aria-label="View source on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/tarunganesh2004/space-invaders-java" target="_blank" rel="noopener" aria-label="View project details"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-diagram-project"></i> The Challenge</div>
+            <p class="deepdive-challenge">A modern tribute to the classic arcade shooter — command a laser cannon against waves of descending aliens across increasingly difficult levels, with upgraded visuals, sound effects and power-ups.</p>
+            <div class="deepdive-label"><i class="fa-solid fa-chart-simple"></i> Deep-Dive Metrics</div>
+            <div class="deepdive-metrics">
+              <div class="deepdive-metric"><b>Multi</b><span>Level Waves</span></div>
+              <div class="deepdive-metric"><b>Power-Ups</b><span>&amp; Sound FX</span></div>
+              <div class="deepdive-metric"><b>Java</b><span>Game Loop</span></div>
+            </div>
+            <div class="deepdive-label"><i class="fa-solid fa-bolt"></i> Tech Stack</div>
+            <div class="deepdive-tech"><span>Java</span><span>Game Dev</span><span>OOP</span></div>
+          </div>
+        </article>
+
+      </div>
+
+      <p style="font-size:.78rem;color:var(--text-faint);margin-top:-6px;">Representative photos sourced from Unsplash for illustrative purposes.</p>
+
+      <footer class="page-footer">
+        <p>Developed by Tarun Ganesh · Copyright © <span class="js-year">2026</span> TG</p>
+        <div class="socials">
+          <a href="https://github.com/tarunganesh2004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tarunganesh2004" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

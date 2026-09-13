@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume — Tarun Ganesh</title>
+<meta name="description" content="View and download Tarun Ganesh's resume.">
+<meta name="theme-color" content="#0a0912">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div id="preloader"><div id="preloaderLottie" class="preloader-lottie"></div></div>
+  <div class="bg-glow" id="bgGlow" aria-hidden="true"></div>
+  <div id="particles-js" class="particles-layer" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Collapse sidebar"><i class="fa-solid fa-chevron-left"></i></button>
+    <a href="index.html" class="brand">Tarun <span>Ganesh</span></a>
+    <nav class="sidebar-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" data-page="index.html"><i class="fa-solid fa-house"></i><span class="label">Home</span></a></li>
+        <li><a href="about.html" class="nav-link" data-page="about.html"><i class="fa-solid fa-user"></i><span class="label">About</span></a></li>
+        <li><a href="experience.html" class="nav-link" data-page="experience.html"><i class="fa-solid fa-briefcase"></i><span class="label">Experience</span></a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills.html"><i class="fa-solid fa-layer-group"></i><span class="label">Skills</span></a></li>
+        <li><a href="services.html" class="nav-link" data-page="services.html"><i class="fa-solid fa-diagram-project"></i><span class="label">Services</span></a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects.html"><i class="fa-solid fa-code-branch"></i><span class="label">Projects</span></a></li>
+        <li><a href="certifications.html" class="nav-link" data-page="certifications.html"><i class="fa-solid fa-certificate"></i><span class="label">Certifications</span></a></li>
+        <li><a href="resume.html" class="nav-link" data-page="resume.html"><i class="fa-solid fa-file-lines"></i><span class="label">Resume</span></a></li>
+        <li><a href="https://leetcode.com/u/enstg123/" class="nav-link" target="_blank" rel="noopener">
+          <i class="fa-solid fa-code"></i><span class="label">LeetCode</span><span class="ext"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link nav-cta" data-page="contact.html"><i class="fa-solid fa-star"></i><span class="label">Contact Me</span></a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-socials">
+        <a href="https://github.com/tarunganesh2004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/tarunganesh2004" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/u/enstg123/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+      </div>
+      <p class="credit">Developed by Tarun Ganesh</p>
+      <p class="copyright">© <span class="js-year">2026</span> TG</p>
+    </div>
+  </aside>
+
+  <main class="content" id="main">
+    <div class="section-inner">
+      <div class="page-head">
+        <span class="eyebrow">Resume</span>
+        <h1 class="glitch" data-text="My resume">My resume</h1>
+        <p>Preview it below, or download a copy to keep.</p>
+      </div>
+
+      <div class="resume-toolbar">
+        <div class="who">
+          <i class="fa-solid fa-file-lines"></i>
+          <div>
+            <strong style="display:block;color:#fff;">Naga Sai Tarun Ganesh Emadabathuni</strong>
+            <span style="font-size:.85rem;color:var(--text-faint);">Data Engineer &amp; AI/ML Developer</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="assets/resume/TarunGanesh_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><i class="fa-solid fa-up-right-from-square"></i><span class="label"> Open in New Tab</span></a>
+          <a href="assets/resume/TarunGanesh_Resume.pdf" download class="btn btn-primary btn-sm"><i class="fa-solid fa-download"></i><span class="label"> Download PDF</span></a>
+        </div>
+      </div>
+
+      <div class="resume-embed reveal">
+        <iframe src="assets/resume/TarunGanesh_Resume.pdf" title="Tarun Ganesh Resume preview" loading="lazy">
+          <p class="resume-fallback">Your browser can't preview PDFs inline. <a href="assets/resume/TarunGanesh_Resume.pdf" class="accent">Click here to download the resume</a> instead.</p>
+        </iframe>
+      </div>
+
+      <footer class="page-footer">
+        <p>Developed by Tarun Ganesh · Copyright © <span class="js-year">2026</span> TG</p>
+        <div class="socials">
+          <a href="https://github.com/tarunganesh2004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tarunganesh2004" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Tarun Ganesh</title>
+<meta name="description" content="Learn about Tarun Ganesh's background, work experience at Infosys, and education at VIT-AP University.">
+<meta name="theme-color" content="#0a0912">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div id="preloader"><div id="preloaderLottie" class="preloader-lottie"></div></div>
+  <div class="bg-glow" id="bgGlow" aria-hidden="true"></div>
+  <div id="particles-js" class="particles-layer" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Collapse sidebar"><i class="fa-solid fa-chevron-left"></i></button>
+    <a href="index.html" class="brand">Tarun <span>Ganesh</span></a>
+    <nav class="sidebar-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" data-page="index.html"><i class="fa-solid fa-house"></i><span class="label">Home</span></a></li>
+        <li><a href="about.html" class="nav-link" data-page="about.html"><i class="fa-solid fa-user"></i><span class="label">About</span></a></li>
+        <li><a href="experience.html" class="nav-link" data-page="experience.html"><i class="fa-solid fa-briefcase"></i><span class="label">Experience</span></a></li>
+        <li><a href="skills.html" class="nav-link" data-page="skills.html"><i class="fa-solid fa-layer-group"></i><span class="label">Skills</span></a></li>
+        <li><a href="services.html" class="nav-link" data-page="services.html"><i class="fa-solid fa-diagram-project"></i><span class="label">Services</span></a></li>
+        <li><a href="projects.html" class="nav-link" data-page="projects.html"><i class="fa-solid fa-code-branch"></i><span class="label">Projects</span></a></li>
+        <li><a href="certifications.html" class="nav-link" data-page="certifications.html"><i class="fa-solid fa-certificate"></i><span class="label">Certifications</span></a></li>
+        <li><a href="resume.html" class="nav-link" data-page="resume.html"><i class="fa-solid fa-file-lines"></i><span class="label">Resume</span></a></li>
+        <li><a href="https://leetcode.com/u/enstg123/" class="nav-link" target="_blank" rel="noopener">
+          <i class="fa-solid fa-code"></i><span class="label">LeetCode</span><span class="ext"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a></li>
+        <li><a href="contact.html" class="nav-link nav-cta" data-page="contact.html"><i class="fa-solid fa-star"></i><span class="label">Contact Me</span></a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-socials">
+        <a href="https://github.com/tarunganesh2004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/tarunganesh2004" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/u/enstg123/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+      </div>
+      <p class="credit">Developed by Tarun Ganesh</p>
+      <p class="copyright">© <span class="js-year">2026</span> TG</p>
+    </div>
+  </aside>
+
+  <main class="content" id="main">
+    <div class="section-inner">
+
+      <div class="about-grid">
+        <div>
+          <div class="about-photo tilt-card">
+            <img src="assets/img/profile.jpg" alt="Tarun Ganesh outdoors" width="600" height="657">
+            <div class="about-photo-badge"><span class="dot"></span> Currently building at Infosys</div>
+          </div>
+          <blockquote class="quote-block">
+            "Success is measured by the impact you make, not the hours you put in."
+          </blockquote>
+        </div>
+
+        <div>
+          <span class="eyebrow">About Me</span>
+          <h1 class="glitch" data-text="Unmasking the Tech Enthusiast">Unmasking the <span class="accent">Tech Enthusiast</span></h1>
+          <p>Hello! I'm Tarun Ganesh, from Andhra Pradesh, India.</p>
+          <p>
+            <i class="fa-solid fa-briefcase" style="color:var(--violet-soft);margin-right:6px;"></i>
+            By day, I'm a <strong>Data Engineer</strong> and <strong>AI/ML Enthusiast</strong>, crafting solutions
+            from the front-end to the back-end and building smart algorithms.
+          </p>
+          <p>Outside of work, I explore new technologies and enjoy tackling unique challenges to push my boundaries.</p>
+
+          <div class="section-block reveal card" style="margin-top:44px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+            <div>
+              <h2 style="margin-bottom:6px;"><i class="fa-solid fa-briefcase" style="color:var(--gold);font-size:.85em;margin-right:8px;"></i>Work Experience</h2>
+              <p style="margin:0;">Infosys, SmartBridge and InTrainTech — see the full breakdown on the Experience page.</p>
+            </div>
+            <a href="experience.html" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> View Experience</a>
+          </div>
+
+          <div class="section-block">
+            <h2><i class="fa-solid fa-graduation-cap" style="color:var(--gold);font-size:.85em;margin-right:8px;"></i>Education</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <h3>B.Tech, Computer Science (AI &amp; ML)</h3>
+                <span class="role-org">Vellore Institute of Technology, Amaravathi (VIT-AP)</span>
+                <span class="period">Dec 2021 — Jul 2025 · CGPA: 8.99 / 10</span>
+                <ul>
+                  <li>Built a strong foundation in computer science while specializing in Artificial Intelligence and Machine Learning.</li>
+                  <li>Acquired practical skills in machine learning, deep learning and natural language processing.</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <h3>Intermediate Education</h3>
+                <span class="role-org">Sri Chaitanya College, Guntur</span>
+                <span class="period">Jun 2019 — Aug 2021 · Marks: 973 / 1000</span>
+                <ul>
+                  <li>Focused on Maths, Physics and Chemistry, building a strong foundation for future studies and career pursuits.</li>
+                  <li>Achieved 576 rank in AP-EAMCET and a 25,000 all-India rank in IIT JEE Mains.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="page-footer">
+        <p>Developed by Tarun Ganesh · Copyright © <span class="js-year">2026</span> TG</p>
+        <div class="socials">
+          <a href="https://github.com/tarunganesh2004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tarunganesh2004" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
